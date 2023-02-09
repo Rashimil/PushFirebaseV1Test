@@ -1,0 +1,50 @@
+.brsc_area_print{
+    display: block;
+    color: #000;
+    font-size: 16px;
+}
+.brsc_area_print img,
+.brsc_area_print button{
+    display: none;
+}
+.rub{
+    font-family: "als_rublregular";
+    font-weight: normal;
+    font-style: normal;
+}
+.brsc_area_print .br5,
+.brsc_area_print .br10,
+.brsc_area_print .br20,
+.brsc_area_print .br30,
+.brsc_area_print .br40{
+    display: block;
+}
+
+.root_table__top,
+.root_table__bottom,
+.brsc_form_popup,
+.brsc_search_drop,
+.brsc_map_site{
+    display: none;
+}
+
+.brsc_area_print2{
+    display: block !important;
+    color: #000;
+    font-size: 16px;
+}
+.hide_to_print,
+.brsc_breadcrumbs,
+.brsc_area_print2 img,
+.brsc_area_print2 button{
+    display: none;
+}
+
+.show_to_print,
+.brsc_area_print2 .br5,
+.brsc_area_print2 .br10,
+.brsc_area_print2 .br20,
+.brsc_area_print2 .br30,
+.brsc_area_print2 .br40{
+    display: block !important;
+}

@@ -1,0 +1,91 @@
+*{box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-webkit-border-horizontal-spacing: 0;-webkit-border-vertical-spacing: 0;}
+html{height:100%;}
+body{
+    height:inherit;
+    background-color:#fff;
+    background-position:top;
+    background-repeat:repeat-x;
+    margin:0;
+    font-family: "robotoregular";
+    color: #4a5b6e;
+    font-size:14px;
+    overflow-y:scroll;
+}
+table,input,textarea{font-size:14px;}
+.pseudo{border-bottom-style:dotted !important;}
+.pseudo_d{border-bottom-style:dashed !important;}
+.br1,.br5,.br10,.br15,.br20,.br25,.br30,.br40,.br50,.br80{height:5px;overflow:hidden;display:block;clear:both;}
+.br80{height:80px;}
+.br50{height:50px;}
+.br40{height:40px;}
+.br30{height:30px;}
+.br25{height:25px;}
+.br20{height:20px;}
+.br15{height:15px;}
+.br10{height:10px;}
+.br5{height:5px;}
+.br1{height:1px;}
+.fs_13,.fsa_13,.fsa_13 *{font-size:13px;}
+.fs_14,.fsa_14,.fsa_14 *{font-size:14px;}
+.fs_15,.fsa_15,.fsa_15 *{font-size:15px;}
+.fs_16,.fsa_16,.fsa_16 *{font-size:16px;}
+.fs_18,.fsa_18,.fsa_18 *{font-size:18px;}
+.fs_20,.fsa_20,.fsa_20 *{font-size:20px;}
+.fs_22,.fsa_22,.fsa_22 *{font-size:22px;}
+.fs_24,.fsa_24,.fsa_24 *{font-size:24px;}
+.fs_25,.fsa_25,.fsa_25 *{font-size:25px;}
+.fs_26,.fsa_26,.fsa_26 *{font-size:26px;}
+i{font-family: "robotoitalic";font-style: italic;}
+b,strong{font-family: "robotobold";font-weight: normal;}
+img{vertical-align:middle !important;border:none !important;}
+
+.brsc_dlink{
+    display: inline-block;
+    position: relative;
+    border: 0;
+    font-size: 13px;
+    padding: 0 20px 0 50px;
+    line-height: 18px;
+    min-height: 50px;
+    margin-bottom: 20px;
+}
+.brsc_dlink:before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 50px;
+    background-image: url(/Content/i/download-icons-sprite.png);
+    background-size: cover;
+}
+.brsc_dlink[href$=".doc"]:before,
+.brsc_dlink[href$=".docx"]:before{
+    background-position: -40px 0;
+}
+.brsc_dlink[href$=".pdf"]:before{
+    background-position: 0 0;
+}
+.brsc_dlink[href$=".xls"]:before,
+.brsc_dlink[href$=".xlsx"]:before{
+    background-position: -80px 0;
+}
+.brsc_dlink[href$=".zip"]:before{
+    background-position: -120px 0;
+}
+.brsc_dlink[href$=".exe"]:before{
+    background-position: -160px 0;
+}
+
+.brsc_dlink .brsc_dlink__t{
+    border-bottom: 1px solid rgba(36,147,197,0.3);
+}
+.brsc_dlink:hover .brsc_dlink__t{
+
+}
+.brsc_dlink .brsc_dlink__size{
+    display: block;
+    color: #4a5b6e;
+    margin-top: 8px;
+}

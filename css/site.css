@@ -1,0 +1,95 @@
+﻿/*Стиль псевдоссылок*/
+.a_pseudo {
+    color: #67B4D4;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    border-color: rgba(36,147,197,0.3);
+    cursor: pointer;
+    /*white-space: nowrap;*/
+}
+
+    .a_pseudo:hover {
+        color: #519e8a;
+    }
+
+
+/*Спиннер:*/
+.spinner {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*min-height: 100vh;*/
+}
+
+    .spinner:after {
+        animation: changeContent .8s linear infinite;
+        display: block;
+        content: "⠋";
+        font-size: 25px;
+    }
+
+@keyframes changeContent {
+    10% {
+        content: "⠙";
+    }
+
+    20% {
+        content: "⠹";
+    }
+
+    30% {
+        content: "⠸";
+    }
+
+    40% {
+        content: "⠼";
+    }
+
+    50% {
+        content: "⠴";
+    }
+
+    60% {
+        content: "⠦";
+    }
+
+    70% {
+        content: "⠧";
+    }
+
+    80% {
+        content: "⠇";
+    }
+
+    90% {
+        content: "⠏";
+    }
+}
+
+/* Канвас:*/
+#c {
+    overflow: hidden;
+    background: rgba(0, 0, 0, .5);
+}
+
+#bg {
+    /*background: radial-gradient(ellipse at center, rgba(255, 255, 255, 1), rgba(0, 0, 0, 1));*/
+    /*background: -webkit-radial-gradient(center, ellipse, ef0e39 0%, #000000 100%);*/
+    /*background: radial-gradient(ellipse at center, #ef0e39 0%, #000000 100%);*/
+    background: rgba(0,200,255,0.05);
+    transform: scale(1.1, 1.1);
+    filter :blur(20px);
+    overflow: hidden;
+}
+
+#left_bg_rect {
+    height: 2000px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    left: -100px;
+    top:-100px;
+    z-index: 999999999;
+    filter: blur(0px);
+}

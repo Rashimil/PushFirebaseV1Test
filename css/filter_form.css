@@ -1,0 +1,48 @@
+﻿/* Бэкграунд формы фильтра*/
+#modal_bg_in_footer {
+    display: none; /* По дефолту скрыто */
+    position: fixed; /* Не двигать */
+    z-index: 9999; /* Чтобы было всегда наверху, лол */
+    padding-top: 100px; /* Положение в боксе */
+    left: 0;
+    top: 0;
+    width: 100%; /* Максимум */
+    height: 100%; /* Максимум */
+    overflow: auto; /* Разрешить скролл (если нужно) */
+    background-color: rgba(0, 0, 0, 0.5); /* С альфаканалом */
+}
+
+/* Форма фильтра */
+.modal {
+    display: block; /* По дефолту скрыто */
+    position: fixed; /* Не двигать */
+    padding-top: 50px; /* Положение в боксе */
+    z-index: 99999; /* Чтобы было всегда наверху, лол */    
+}
+
+
+/* Контент модального окна */
+.modal_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 720px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 4px;
+}
+
+/* Кнопка "Закрыть" */
+.closess {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .closess:hover,
+    .closess:focus { /*Фокус на кнопке "Закрыть"*/
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }

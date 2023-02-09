@@ -1,0 +1,10 @@
+.brsc_form_success{
+    color: #26BE3D;
+    font-size: 14px;
+}
+.brsc_form_error{
+    color: #FF0000;
+}
+.disactive{
+    opacity: 0.5;
+}
