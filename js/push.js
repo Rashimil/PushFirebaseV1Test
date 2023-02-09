@@ -25,32 +25,32 @@ function Check() {
 
 function Subscribe() {
 	
-	    // handle catch the notification on current page
-    messaging.onMessage(function(payload) {
-        console.log('Message received', payload);
-        info.show();
-        info_message
-            .text('')
-            .append('<strong>'+payload.data.title+'</strong>')
-            .append('<em>'+payload.data.body+'</em>')
-        ;
+	    // // handle catch the notification on current page
+    // messaging.onMessage(function(payload) {
+        // console.log('Message received', payload);
+        // info.show();
+        // info_message
+            // .text('')
+            // .append('<strong>'+payload.data.title+'</strong>')
+            // .append('<em>'+payload.data.body+'</em>')
+        // ;
 
-        // register fake ServiceWorker for show notification on mobile devices
-        navigator.serviceWorker.register('/PushFirebaseV1Test/firebase-messaging-sw.js');
-        Notification.requestPermission(function(permission) {
-            if (permission === 'granted') {
-                navigator.serviceWorker.ready.then(function(registration) {
-                  // Copy data object to get parameters in the click handler
-                  payload.data.data = JSON.parse(JSON.stringify(payload.data));
+        // // register fake ServiceWorker for show notification on mobile devices
+        // navigator.serviceWorker.register('/PushFirebaseV1Test/firebase-messaging-sw.js');
+        // Notification.requestPermission(function(permission) {
+            // if (permission === 'granted') {
+                // navigator.serviceWorker.ready.then(function(registration) {
+                  // // Copy data object to get parameters in the click handler
+                  // payload.data.data = JSON.parse(JSON.stringify(payload.data));
 
-                  registration.showNotification(payload.data.title, payload.data);
-                }).catch(function(error) {
-                    // registration failed :(
-                    showError('ServiceWorker registration failed', error);
-                });
-            }
-        });
-    });
+                  // registration.showNotification(payload.data.title, payload.data);
+                // }).catch(function(error) {
+                    // // registration failed :(
+                    // showError('ServiceWorker registration failed', error);
+                // });
+            // }
+        // });
+    // });
 	
 	
     // запрашиваем разрешение на получение уведомлений:
